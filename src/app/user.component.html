@@ -1,0 +1,32 @@
+<div class="row">
+    <div>
+        <input type="text" [(ngModel)]="keyword" name="keyword"/>
+        <button (click)="Search()">Search</button>
+    </div>
+    <div>
+        <a [routerLink]="['user-add']">Add New</a>
+    </div>
+</div>
+<table class="table">
+    <thead>
+        <tr>
+            <td>ID</td>
+            <td>Name</td>
+            <td>UserName</td>           
+            <td>Trạng thái</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let user of users">
+            <td>{{user.Id}}</td>            
+            <td>{{user.UserName}}</td>
+            <td>{{user.FullName}}</td>
+            <td>{{user.IsActive}}</td>
+            <td>
+                <a [routerLink]="['user-detail',user.ID]">Show Detail</a>
+                <a [routerLink]="['user-edit',user.ID]">Edit</a>
+                <button (click)="Delete(user.ID)">Delete</button>
+            </td>
+        </tr>
+    </tbody>
+</table>

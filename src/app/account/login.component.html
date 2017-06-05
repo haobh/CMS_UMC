@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>UMC Admin Panel | Sign In :: umc</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="keywords" content="Pooled Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+  <script type="application/x-javascript">
+    addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); }
+  </script>
+  <!-- Bootstrap Core CSS -->
+  <link href="../../../assets/admin/css/bootstrap.min.css" rel='stylesheet' type='text/css' />
+
+  <!-- Custom CSS -->
+  <link href="../../../assets/admin/css/style.css" rel='stylesheet' type='text/css' />
+  <link rel="stylesheet" href="../../../assets/admin/css/morris.css" type="text/css" />
+  <!-- Graph CSS -->
+  <link href="../../../assets/admin/css/font-awesome.css" rel="stylesheet">
+  <link rel="stylesheet" href="../../../assets/admin/css/jquery-ui.css">
+  <!-- jQuery -->
+  <script src="../../../assets/admin/js/jquery-2.1.4.min.js"></script>
+  <!-- //jQuery -->
+  <link href='//fonts.googleapis.com/css?family=Roboto:700,500,300,100italic,100,400' rel='stylesheet' type='text/css' />
+  <link href='//fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+  <!-- lined-icons -->
+  <link rel="stylesheet" href="../../../assets/admin/css/icon-font.min.css" type='text/css' />
+  <!-- //lined-icons -->
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+</head>
+
+<body>
+<div class="main-wthree">
+    <div class="container">
+      <div class="sin-w3-agile">
+        <div style="display:flex;align-items:center;justify-content:center;">
+          <img src="../../../assets/admin/images/logo.png" />
+        </div>
+        <h2>UMC Electrocnic VietNam<br>Sign In</h2>
+        <form class="form" #f="ngForm" (ngSubmit)="Login(f.value)">       
+          <div class="input-group">
+            <div class="input-group-addon">
+              <i class="glyphicon glyphicon-user"></i>
+            </div>
+            <input name="username" class="form-control" placeholder="username" type="text" [(ngModel)]="username" required/>
+          </div>
+          <div class="input-group">
+            <div class="input-group-addon">
+              <i class="glyphicon glyphicon-lock"></i>
+            </div>
+            <input name="password" class="form-control" placeholder="password" type="password" [(ngModel)]="password" required/>
+          </div>
+          <div class="rem-for-agile">
+            <input type="checkbox" name="remember" class="remember" />Remember me<br>
+            <a href="#">Forgot Password</a><br>
+          </div>
+          <div class="login-w3">
+            <button type="submit" class="btn btn-success" [disabled]="!f.form.valid">Submit</button>
+          </div>
+          <div class="clearfix"></div>
+        </form>
+        <div class="footer">
+          <p>&copy; 2017 UMC . All Rights Reserved | Design by <a href="http://w3layouts.com">Haobh</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
